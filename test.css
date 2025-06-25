@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #00cfff;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.right, .left, .middle, .all {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.right {
+  width: 54%;
+  top: -10px;
+  left: -10px;
+  background-color: #111;
+  z-index: -9;
+}
+
+.left {
+  width: 65%;
+  top: 75px;
+  right: -152px;
+  transform: rotate(13deg);
+  background-color: #00cfff;
+}
+
+.middle {
+  width: 16px;
+  left: 600px;
+  top: -19px;
+  height: 600px;
+  transform: rotate(13deg);
+  background-color: #00a9cf;
+}
+
+.all {
+  top: -17px;
+  width: 100%;
+  z-index: 900;
+  background: linear-gradient(
+    to left,
+    #000000f2 0%,
+    #000000d0 10%,
+    #000000a5 30%,
+    #00000070 50%,
+    #00000030 70%,
+    #ffffff00 100%
+  );
+}
+.all {
+  transition: opacity 0.8s ease-in-out;
+  opacity: 1;
+}
+
+.all:hover {
+  opacity: 0.8;
+}
+
