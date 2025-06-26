@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  max-width: 400px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.input-group {
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+}
+
+#addTaskBtn {
+  padding: 10px 15px;
+  background-color: #5e60ce;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#addTaskBtn:hover {
+  background-color: #4a4eb4;
+}
+
+#taskList {
+  list-style: none;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.task.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.task button {
+  background: transparent;
+  border: none;
+  color: #ff5e57;
+  font-size: 18px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.task p {
+  background: transparent;
+  border: none;
+  color: #ff5e57;
+  font-size: 18px;
+  font-weight: 900;
+  cursor: pointer;
+}
